@@ -1,6 +1,6 @@
 # Setup — 기술력 검증 문서
 
-> 이 문서는 `Setup_기획.md`(설득력)와 별개로, 선택한 기술이 **정말 구현 가능한가**를 검증합니다.
+> 이 문서는 `Setup_설득력.md`와 별개로, 선택한 기술이 **정말 구현 가능한가**를 검증합니다.
 > 평가 기준: 적합성 / 구현 가능성 / 난이도 / 대안 비교 / 고도화 방안 / 사전 검증(PoC)
 
 ---
@@ -13,8 +13,10 @@
 | F2 | LLM 자동 분류 | rule-first → LLM fallback (OpenAI structured output strict:true) | ✅ 스키마 준수 100% 보장(A) | ✅ W2 | 중간 | rule-only(신규 가맹점 취약), full fine-tuning(데이터 부족·비용 과잉) | 사용자 교정 데이터 5k+ 축적 시 KLUE-RoBERTa fine-tune | ⏳ W2 시작 시 50건 실측 필요 |
 | F3 | 이상 탐지 | Rolling z-score (주 단위, 카테고리별) | ✅ n≈100에서 IsolationForest보다 안정적(A) | ✅ W3-W4 | 낮음 | IsolationForest(Liu et al. 2008: n≥128 필요), ARIMA(baseline엔 과함) | 사용자 >5000 & FP>30% 시 IsolationForest 재도입 | ✅ 공식 문서 근거 확보 |
 | C1 | 인과 서사 생성 | Pandas 집계 feature → LLM structured output | ✅ 통계가 사실 근거 강제 → hallucination 방지 | ✅ W3 | 중간 | 순수 LLM(hallucination), 복잡 인과추론 ML(5주 밖) | feature 종류 확대(시간대 클러스터, 버킷 잔액 변화율 등) | ⏳ W3 프롬프트 설계 필요 |
-| C2/C4 | 미래 궤적 계산 | numpy-financial fv() — deterministic | ✅ 예적금은 고정금리+매칭이므로 결정론적이 정확(A) | ✅ W3 (검증 완료) | 낮음 | Monte Carlo(투자용, 오버엔지니어링), ARIMA(불확실성 모델링 불필요) | 투자형 도약계좌 도입 시 Monte Carlo 추가 | ✅ fv() = 45,942,121원 검증 |
-| C3 | 정책 매칭 | JSON-based condition evaluator + 온통청년 API | ✅ 연령·소득·거주지는 결정론적 판정이 안전(B) | ✅ W4 | 중간 | LLM 자격 판정(오류 위험), sklearn decision tree(과설계) | 정책 수 >50종 시 rule engine 프레임워크화 | ⏳ API 가입 후 응답 필드 확인 필요 |
+| C2/C4-A | 미래 궤적 계산 | numpy-financial fv() — deterministic | ✅ 예적금은 고정금리+매칭이므로 결정론적이 정확(A) | ✅ W3 (검증 완료) | 낮음 | Monte Carlo(투자용, 오버엔지니어링), ARIMA(불확실성 모델링 불필요) | 투자형 도약계좌 도입 시 Monte Carlo 추가 | ✅ fv() = 45,942,121원 검증 |
+| C3-A | 정책 자격 매칭·신청 순서 | JSON condition evaluator + 정책 간 충돌·선후관계 규칙 + 온통청년 API | ⚠️ 자격 조건 비교는 결정론적이지만 중복·선후 규칙은 공고 원문 확인 필요 | `UNVERIFIED` | 미산정 | LLM 자격·순서 판정은 오류 근거를 추적하기 어려워 제외 | 정책 수 >50종 시 rule engine 프레임워크화 | `UNVERIFIED`: API 필드와 충돌·선후 규칙 모델 미확인 |
+| C3-B | 소득 컷오프 시나리오 | 자기입력 누적소득 + threshold rule | ⚠️ 정책별 산정 방식·기준일 확인 필요 | `UNVERIFIED` | 미산정 | SMS/PUSH 자동 수집은 권한·법적 검증 전 제외 | 검증한 소득 입력 채널 확보 후 자동화 | `UNVERIFIED` |
+| C4-B | 할부 유지·중도상환 비교 | 자기입력 잔여 원금·할부 수수료율·남은 회차/결제일·중도상환 예정액 + 확인된 지원금 입금 예정일 | ⚠️ 카드사별 수수료·중도상환 조건 확인 필요 | `UNVERIFIED` | 미산정 | SMS/PUSH·CODEF 자동 수집은 입력 방식 확정 전 제외 | 공식 명세 확보 후 자동 수집 연동 | `UNVERIFIED` |
 | C5 | if-then 계획 | Template engine + LLM rewriting | ✅ Template이 안전 경계, LLM은 멘탈 라벨 번역만 | ✅ W5 | 낮음 | LLM 단독 자유생성(금융 조언 리스크) | 사용자 멘탈 라벨 학습(온보딩 질문 vs 패턴 추론 A/B) | 설계 완료 |
 | UI | 궤적 차트 | Recharts(React) 또는 fl_chart(Flutter) | ✅ baseline+scenario 겹치기 + 슬라이더 = 기본 기능 | ✅ W4-W5 | 낮음 | D3.js(러닝커브), 커스텀 Canvas(불필요) | 데이터 >10K 포인트 시 viewport 렌더링 최적화 | 설계 완료 |
 
@@ -62,7 +64,7 @@
 
 **결론**: MVP는 rolling z-score로 시작. IsolationForest는 stretch(W4 go/no-go).
 
-### 2-4. 미래 자산 계산 (C2/C4)
+### 2-4. 미래 자산 계산 (C2/C4-A)
 
 | 항목 | 결과 | 출처 |
 |---|---|---|
@@ -72,17 +74,18 @@
 | Monte Carlo 배제 | 예적금·소비는 변동성 없음 → deterministic이 해석 가능성 우위 | 설계 원칙 |
 | 고도화 | 투자형 도약계좌 도입 시 Monte Carlo/scipy 추가 | 설계 판단 |
 
-### 2-5. 정책 매칭 (C3)
+### 2-5. 정책 매칭 (C3-A)
 
 | 항목 | 결과 | 출처 |
 |---|---|---|
 | API 존재 | 온통청년 REST API: policy name, age, income, region, period 필드 | [youthcenter.go.kr](https://www.youthcenter.go.kr/opi/quickSearchList.do)(B) |
 | Auth key | 필요; rate limit 미확인 | youthcenter.go.kr(B) |
 | Rule engine | JSON condition evaluator(age/income/region check)가 5주 내 가장 빠름 | 설계 판단(medium confidence) |
+| 중복·선후관계 규칙 | 공고 원문의 정책 ID·적용 기간·충돌·선행 조건을 규칙으로 구조화해야 함 | `UNVERIFIED`: 공식 공고 조항 미확인 |
 | LLM 역할 | 자격 판정 금지; 출처 기반 설명만 | 설계 원칙 |
 | 고도화 | 정책 >50종 시 decision tree framework 고려 | 설계 판단 |
 
-**미확인**: API 실제 응답 스키마·pagination — W1에 가입 후 샘플 호출 필수.
+**미확인**: API 실제 응답 스키마·pagination, 정책 간 중복·선후관계 조항. 샘플 호출과 공고 원문 대조 전 신청 순서 기능은 `UNVERIFIED`다.
 
 ### 2-6. if-then 계획 (C5)
 
@@ -109,10 +112,12 @@
 | 인과 서사 LLM prompt v1 | 6h | W3-W4 |
 | 온통청년 API 연동 + JSON rule evaluator | 8h | W4 |
 | Scenario delta calculation(slider) | 4h | W4 |
+| 소득 컷오프 시나리오(C3-B) | `UNVERIFIED` | 신규 MVP 범위, 공수 재산정 필요 |
+| 할부 유지·중도상환 비교(C4-B) | `UNVERIFIED` | 신규 MVP 범위, 공수 재산정 필요 |
 | Recharts/fl_chart 궤적 차트 | 8h | W4-W5 |
 | if-then template + LLM rewrite | 4h | W5 |
 | E2E QA + 발표 준비 | 16h | W5 |
-| **합계** | **88h ≈ 11일(1인 기준)** | **6인 × 5주 = 150인시 충분** |
+| **기존 범위 소계** | **88h ≈ 11일(1인 기준)** | **C3-B·C4-B 제외. 전체 MVP 공수는 `UNVERIFIED`** |
 
 ---
 
