@@ -1,0 +1,110 @@
+﻿{
+    "version":  1,
+    "root":  "C:\\Users\\SSAFY\\Desktop\\a408",
+    "files":  [
+                  {
+                      "path":  "a408_기획.md",
+                      "sha256":  "EDE44E0E4B666EC06EB93EA8C27CC66F82091EDC8773FD5097FF28EEA622B468"
+                  },
+                  {
+                      "path":  "PLAN.md",
+                      "sha256":  "D8DFF8CD802E312C0391995AFEE45D19310346D939D98FA7FCD8C07E32240815"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/ai-research.md",
+                      "sha256":  "992C79EB1719DC3625E2B38621DC8595B42AF3DAFE656BBEF087608CCC5F3766"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/CANDIDATE-002.manifest.json",
+                      "sha256":  "30CEB592F3A853EC7D2B336D9438E84E659E974AE8865F6A3362A2962D0CD2FE"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/design-A.md",
+                      "sha256":  "10388887798779FB2EE9CC13F4F2B128F22CC961736C24AF18A43C67651660D1"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/design-B.md",
+                      "sha256":  "80D1F43E11C788818A7CE72A46A9473C3300EB8285CA7F65801E237A3353D011"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/direction-selection.md",
+                      "sha256":  "AD56F98381907A664EB8F491E641E92F37D89525B0CA1A03FC81805375B4A729"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/hero-ai-research.md",
+                      "sha256":  "9DDF8496A1D148DE3E4331630F0C2DD5D0B852D99E580F5610A8F3B249212016"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/problem-synthesis.md",
+                      "sha256":  "CC9D00A88C7F2A5721B09DA5E3E6BE62C8DA97CD741B3F20D08C561620A47637"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/state.json",
+                      "sha256":  "064B9D23272E27E03434D3A943CCB77291A82CACBE0F472C98965862CE92497F"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/verifier-final.md",
+                      "sha256":  "CE6274FF6415AD151FFFBBB444CBED9E88495FC0819ED8869B4E7A091281C86A"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/verifier-final-candidate-002.md",
+                      "sha256":  "E73A63035D58A9D1D61F29CA51E528591B40CA13F36213E1018E0087D83D73BE"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/verifier-final-candidate-003.md",
+                      "sha256":  "F1237685B5669D6BF77239E7DF5A12E9399A7A28B3C82D985F395F21DE83BF69"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/verifier-problem.md",
+                      "sha256":  "6FCB160D94548B66533BA03A4626A1759267BCB8E684CADC03A522298D3BA163"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/worker-A.md",
+                      "sha256":  "676265FEB058B87EA942141FB055799AD8440B59AAD93C202DE4BDF1AB06E9FB"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/worker-B.md",
+                      "sha256":  "5536B878F68937552AF2C741E7EF19B9F73404D08FC0CF19873EA7C956F65989"
+                  },
+                  {
+                      "path":  "RESEARCH/setup-differentiation_2026-08-22/worker-C.md",
+                      "sha256":  "969053A6F4DA2A05DB65593D412997AF64DFF53E7290634F2AFEC94D9DE66CEE"
+                  },
+                  {
+                      "path":  "TASK.md",
+                      "sha256":  "BEAA750F9889FAD9ED6FEBC077EAEA2101F2ACB7B302C80B4FFB3B4BFFE890D9"
+                  },
+                  {
+                      "path":  "tmp_inspect/example-pdf/page-1.png",
+                      "sha256":  "847F93AA80395B147D0B059D08D51E4CF0D9ACE064EA70F294E09ACA14EF2CF2"
+                  },
+                  {
+                      "path":  "tmp_inspect/template-inspect/assets/ppt/media/image1.png",
+                      "sha256":  "964E78209F109D454F1C1A6BD2CE879064A5D9FCEE139802EB572F3D08E5268E"
+                  },
+                  {
+                      "path":  "tmp_inspect/template-inspect/assets/ppt/media/image2.png",
+                      "sha256":  "8545AF3B143391139E46639134CC388C08F228D8487731262A181D827692FE7D"
+                  },
+                  {
+                      "path":  "tmp_inspect/template-inspect/layouts/source-slide-01.layout.json",
+                      "sha256":  "060E167EA4F58CD6CCCFD6735199316B82E6CF2A7B65C4DF653352C6A7B1E9F2"
+                  },
+                  {
+                      "path":  "tmp_inspect/template-inspect/source-slides/source-slide-01.png",
+                      "sha256":  "6947787EDEFF365AA3FE728438FDAECF1F59613070D28DB7D155F52E91AE87D8"
+                  },
+                  {
+                      "path":  "tmp_inspect/template-inspect/template-inspect.ndjson",
+                      "sha256":  "2C7D2166E643F79DDDB766D3C39FFC8E9C143D395F8D1B01C16A30629A42031F"
+                  },
+                  {
+                      "path":  "tmp_inspect/template-inspect/template-manifest.json",
+                      "sha256":  "AE07CA03EDB23CBDB6E4973A27DA8A7CFDD6A11370CF51141ED4307A6AEA4549"
+                  },
+                  {
+                      "path":  "tmp_inspect/unzip.cmd",
+                      "sha256":  "4B4741EE8E641F992A710E148EC938CACCAF0E82AA75D7713EE8D9C9079A31DB"
+                  }
+              ]
+}
