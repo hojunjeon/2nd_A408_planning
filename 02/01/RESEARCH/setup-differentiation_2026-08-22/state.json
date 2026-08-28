@@ -1,0 +1,15 @@
+{
+  "topic": "Setup differentiation, AI elevation, and interview STARR design",
+  "date": "2026-08-22",
+  "scope": "Young adults in Korea; public community, video/SNS, alternative behavior, provider data and constraints; current project brief",
+  "worker_axes": ["community/forum", "video/SNS", "alternative behavior/provider"],
+  "status": "FROZEN",
+  "candidate": "CANDIDATE-003",
+  "source_count": 42,
+  "source_count_basis": "PLAN.md numbered bibliography links, including one explicitly BLOCKED mirror",
+  "unresolved_items": ["Public anecdotes are not prevalence evidence", "Current policy pages and provider access can change", "No implementation/test/approval/benefit results exist", "Policy IR semantic correctness and digital-twin usefulness are untested"],
+  "verifier": "verifier-final-candidate-003.md",
+  "freeze_manifest": "CANDIDATE-003.manifest.json",
+  "prior_freeze_manifest": "CANDIDATE-002.manifest.json",
+  "freeze_rule": "No file mutation after manifest creation"
+}
