@@ -1,0 +1,34 @@
+{
+  "topic": "금융 디지털 트윈(Financial Digital Twin) — 개념 / 구현 방식 / 사례 / 셋업 적용",
+  "date": "2026-08-28",
+  "status": "complete (부분 BLOCKED 명시)",
+  "report": "report.md",
+  "worker_files": [
+    "worker-A-official.md",
+    "worker-B-academic.md",
+    "worker-C-industry.md",
+    "worker-D-korea.md",
+    "worker-E-community.md",
+    "worker-F-wiki-video-social.md",
+    "worker-G-datasets-viz.md",
+    "worker-H-autosave-dtoc.md",
+    "worker-I-stat-verification.md",
+    "worker-J-stat-verification-2.md"
+  ],
+  "source_count_approx": 136,
+  "key_findings": [
+    "개인 소비·자금흐름을 디지털 트윈으로 구현한 사례는 국내외 조사 범위에서 0건",
+    "기능 선례는 Plaid/Digit/Qapital에 풍부하나 아무도 '디지털 트윈'이라 부르지 않음",
+    "DTC 2020 정의('entities and processes', 'specified frequency')와 Gartner DToC로 용어 방어 가능",
+    "CFPB vs Hello Digit(2022): 자동이체 오버드래프트 유발 제재 — 안전성 판정이 핵심 난이도",
+    "기획서 수치 6건 중 그대로 인용 가능 1건, refuted 1건, partial 4건",
+    "Fortune City '지출 조장 부작용 리뷰 확인' 주장은 근거 없음 -> 수정 필요"
+  ],
+  "top_unresolved": [
+    "국내 선례(토스 '이번 달 쓸 수 있는 돈' 등) 미확인 — 차별성 주장의 전제",
+    "Monzo Pots/Revolut Pockets/Starling Spaces 미확인 — 건 단위 귀속 차별점",
+    "통계청 가계동향조사 마이크로데이터 — 데모 데이터 캘리브레이션",
+    "2D 아이소메트릭 시각화 전량 BLOCKED",
+    "NIST 정의 BLOCKED / Fortune City 수상이력 BLOCKED"
+  ]
+}
