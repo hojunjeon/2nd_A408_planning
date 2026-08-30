@@ -1,7 +1,7 @@
 # 발표 서사 v2와 영상 문법의 격차 분석
 
 - 분석 기준: 2026년 8월 30일 KST
-- 비교 대상: [셋업 발표 서사 v2](../../setup_mysterious_architecture_narration_structure_v2.md)와 「신비한 건축사전」 상위 영상 7편
+- 비교 대상: 셋업 발표 서사 v2와 「신비한 건축사전」 상위 영상 7편. v2는 이 분석을 반영해 [v3](../../setup_mysterious_architecture_narration_structure_v3.md)로 개정됐고, 개정 전 원본은 커밋 `abb16a0`에 있다.
 - 방법: 공식 `ko-orig` 자동자막을 문자 위치 단위로 시간에 되돌려 정보 격차가 열리는 시점을 측정하고 v2의 슬라이드 시간표와 같은 축에 놓았다.
 - 목적: v2가 영상 문법과 어디서 어긋나고 무엇이 빠졌는지 찾는다. 이 문서는 진단이며 v2를 수정하지 않았다.
 
@@ -252,7 +252,7 @@ v4는 셋업을 “한 달의 소비로 나만의 도시를 짓는 소비 관리
 ## 11. 근거 문서와 출처
 
 - [채널 고조회수 영상 구조 분석](report.md)
-- [셋업 발표 서사 v2](../../setup_mysterious_architecture_narration_structure_v2.md)
+- [셋업 발표 서사 v3](../../setup_mysterious_architecture_narration_structure_v3.md)
 - [개선된 기획 고도화 v4](../../개선된_기획_게이미피케이션_v4.md)
 - [셋업 사용자 여정 v4](../../사용자_여정.md)
 - [셋업 기획 근거 리서치](../../리서치_결과_정리_셋업.md)

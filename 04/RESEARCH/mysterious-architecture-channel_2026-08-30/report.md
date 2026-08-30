@@ -202,7 +202,7 @@ Shorts 338개의 공개 조회수 스냅샷은 다음과 같다.
 
 셋업도 문제를 없애지 않는다. 소비는 계속 발생하고 결제일도 계속 온다. 대신 거래의 경로와 시점을 읽어 `관리 가능한 도시 상태`로 바꾼다.
 
-발표용 전체 서사는 별도 문서 [setup_mysterious_architecture_narration_structure_v2.md](../../setup_mysterious_architecture_narration_structure_v2.md)에 정리했다.
+발표용 전체 서사는 별도 문서 [setup_mysterious_architecture_narration_structure_v3.md](../../setup_mysterious_architecture_narration_structure_v3.md)에 정리했다.
 
 ---
 
