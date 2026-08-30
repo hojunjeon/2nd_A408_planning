@@ -252,6 +252,7 @@ v4는 셋업을 “한 달의 소비로 나만의 도시를 짓는 소비 관리
 ## 11. 근거 문서와 출처
 
 - [채널 고조회수 영상 구조 분석](report.md)
+- [영상 분석 자료집](video-analysis-dataset.md)
 - [셋업 발표 서사 v3](../../setup_mysterious_architecture_narration_structure_v3.md)
 - [개선된 기획 고도화 v4](../../개선된_기획_게이미피케이션_v4.md)
 - [셋업 사용자 여정 v4](../../사용자_여정.md)

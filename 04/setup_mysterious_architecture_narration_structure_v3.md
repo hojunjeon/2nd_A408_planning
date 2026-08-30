@@ -135,6 +135,7 @@
 - [셋업 사용자 여정 v4](사용자_여정.md)
 - [셋업 기획 근거 리서치](리서치_결과_정리_셋업.md)
 - [발표 서사와 영상 문법의 격차 분석](RESEARCH/mysterious-architecture-channel_2026-08-30/pitch-gap-analysis.md)
+- [영상 분석 자료집](RESEARCH/mysterious-architecture-channel_2026-08-30/video-analysis-dataset.md)
 
 ---
 
