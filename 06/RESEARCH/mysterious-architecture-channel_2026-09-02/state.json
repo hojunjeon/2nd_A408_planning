@@ -1,0 +1,8 @@
+{
+  "topic": "신비한 건축사전 유튜브 영상 흐름·스크립트와 조회수 패턴",
+  "scope": "공개 채널·영상 메타데이터·공개 자막을 2026-09-02 기준 확인하고, 반복되는 서사/편집 패턴을 조회수와 함께 비교",
+  "worker_axes": ["official_metadata", "transcript_flow", "creator_research"],
+  "status": "scouting",
+  "source_count": 0,
+  "unresolved": ["YouTube 직접 페이지/영상 파일 접근 제한 가능성", "공개 조회수는 시점별 스냅샷이며 인과를 증명하지 않음"]
+}
