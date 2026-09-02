@@ -1,7 +1,7 @@
 # KeyFin 발표 설계
 
-발표 길이 가정: 7분(420초)  
-기준 문서: [KeyFin 기획](KeyFin_기획.md)  
+발표 길이 가정: 7분(420초)
+기준 문서: [KeyFin 기획](KeyFin_기획.md)
 서사 참고: [신비한 건축사전 영상 패턴 분석](RESEARCH/mysterious-architecture-channel_2026-09-02/report.md)
 
 ## 발표 목표
