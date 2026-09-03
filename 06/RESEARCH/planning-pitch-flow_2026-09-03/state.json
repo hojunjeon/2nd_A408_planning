@@ -1,0 +1,8 @@
+{
+  "topic": "IT 및 SSAFY 특화 프로젝트 기획 발표(피칭) 흐름·심사위원 설득 프레임워크",
+  "scope": "IT 서비스 기획 피칭 프레임워크(문제-해결-증명, MoSCoW, Y Combinator/스타트업 피칭), SSAFY 특화 프로젝트 심사 평가 기준(도메인 적합성, 기술 깊이/예외 처리, 아키텍처 및 원장 정합성, 차별성, 실현 가능성), 영상 내러티브 구조와의 융합 패턴 조사",
+  "worker_axes": ["pitch_frameworks", "ssafy_evaluation_criteria", "narrative_synthesis"],
+  "status": "complete",
+  "source_count": 14,
+  "unresolved": ["개별 심사위원별 정성적 성향(비즈니스 중심 vs 순수 엔지니어링 중심)에 따른 편차", "발표 시간 제한(5분, 7분, 10분)에 따른 비트 압축률 조정 필요"]
+}
