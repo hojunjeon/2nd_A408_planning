@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+
+# Tool & Cache artifacts
+.firecrawl/
+*.log
+*.err
+*.out
+.DS_Store
+Thumbs.db
+
+# Video work-in-progress & temporary build files
+08_영상포폴/영상/
+08_영상포폴/videos/새 폴더/
+*.vrew
